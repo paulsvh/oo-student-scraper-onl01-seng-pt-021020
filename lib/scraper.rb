@@ -2,10 +2,7 @@ require 'open-uri'
 require 'pry'
 
 class Scraper
-
-  def get_page
-      doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/"))
-    end
+doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/"))
 
   def self.scrape_index_page(index_url)
 
